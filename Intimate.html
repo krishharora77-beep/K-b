@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Hello There</title>
+
+<style>
+body{
+    background:white;
+    text-align:center;
+    font-family:Arial, sans-serif;
+    padding-top:100px;
+}
+
+h1{
+    color:#ff4d6d;
+    font-size:40px;
+}
+
+p{
+    font-size:20px;
+    color:#444;
+}
+
+button{
+    padding:15px 30px;
+    margin:15px;
+    font-size:18px;
+    border:none;
+    border-radius:30px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+#curious{
+    background:#4CAF50;
+    color:white;
+}
+
+#curious:hover{
+    background:#45a049;
+}
+
+#dont{
+    background:#ff4d4d;
+    color:white;
+}
+
+#dont:hover{
+    background:#e60000;
+}
+</style>
+
+<script>
+function curious(){
+    document.getElementById("message").innerHTML =
+    "So... you were curious 😏<br><br>I just wanted to say... you make my day a little brighter.";
+}
+
+function dont(){
+    document.getElementById("message").innerHTML =
+    "Hey! I told you not to click that 😂<br><br>Now that you're here... have a great day!";
+}
+</script>
+
+</head>
+
+<body>
+
+<h1>Hey 👋</h1>
+<p>I made something small...</p>
+
+<button id="curious" onclick="curious()">Click me if you're curious</button>
+<button id="dont" onclick="dont()">Don't click this</button>
+
+<p id="message" style="margin-top:40px;font-size:22px;"></p>
+
+</body>
+</html>
